@@ -26,6 +26,12 @@
 
 </td>
     <td>
+      <a href="https://github.com/riga">
+        <img src="https://img.shields.io/badge/GitHub-blue?style=flat&logo=github&logoColor=white&color=0181FF">
+      </a>
+      <a href="https://gitlab.com/riga">
+        <img src="https://img.shields.io/badge/GitLab-blue?style=flat&logo=gitlab&logoColor=white&color=0181FF">
+      </a>
       <a href="https://www.linkedin.com/in/marcelrieger">
         <img src="https://img.shields.io/badge/Linkedin-blue?style=flat&logo=linkedin&logoColor=white&color=0181FF">
       </a>

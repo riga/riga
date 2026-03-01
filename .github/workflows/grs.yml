@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  create_cards:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,17 +15,17 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=riga&show_icons=true&count_private=true&include_all_commits=true&hide_title=true&hide_border=true&theme=nord
+          options: username=riga&show_icons=true&include_all_commits=true&hide_title=true&hide_border=true&theme=nord
           path: assets/stats.svg
-          token: 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
+          token: ${{ secrets.PAT }}
 
       - name: Generate langs card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=riga&layout=compact&hide_border=true&theme=nord
+          options: username=riga&layout=compact&hide_border=true&hide_title=false&theme=nord
           path: assets/langs.svg
-          token: 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
+          token: ${{ secrets.PAT }}
 
       - name: Commit cards
         run: |

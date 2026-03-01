@@ -17,7 +17,7 @@ jobs:
           card: stats
           options: username=riga&show_icons=true&count_private=true&include_all_commits=true&hide_title=true&hide_border=true&theme=nord
           path: assets/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
 
       - name: Generate langs card
         uses: readme-tools/github-readme-stats-action@v1
@@ -25,7 +25,7 @@ jobs:
           card: top-langs
           options: username=riga&layout=compact&hide_border=true&theme=nord
           path: assets/langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
 
       - name: Commit cards
         run: |

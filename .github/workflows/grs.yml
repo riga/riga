@@ -15,7 +15,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&count_private=true&include_all_commits=true&hide_title=true&hide_border=true&theme=nord
+          options: username=riga&show_icons=true&count_private=true&include_all_commits=true&hide_title=true&hide_border=true&theme=nord
           path: assets/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -23,7 +23,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&hide_border=true&theme=nord
+          options: username=riga&layout=compact&hide_border=true&theme=nord
           path: assets/langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 

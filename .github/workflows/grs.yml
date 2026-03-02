@@ -23,7 +23,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=riga&layout=compact&hide_border=true&hide_title=false&card_width=320&theme=nord
+          options: username=riga&layout=compact&hide_border=true&hide_title=false&card_width=340&theme=nord
           path: assets/langs.svg
           token: ${{ secrets.PAT }}
 
